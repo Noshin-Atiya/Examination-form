@@ -1,0 +1,16 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "C:/xampp1/htdocs/IWT Project"
+		},
+		{
+			"path": "../AAD LAB"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "IWT-Project"
+	}
+}
