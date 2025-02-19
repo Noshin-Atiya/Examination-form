@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JU Examination Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Jahangirnagar University Examination Form</h2>
+        <form id="examForm" action="submit_exam.php" method="POST" onsubmit="return validateForm()">
+            <label for="student_id">Student ID:</label>
+            <input type="text" id="student_id" name="student_id" required>
+            
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="department">Department:</label>
+            <input type="text" id="department" name="department" required>
+            
+            <label for="semester">Semester:</label>
+            <input type="text" id="semester" name="semester" required>
+            
+            <label for="exam_type">Exam Type:</label>
+            <select id="exam_type" name="exam_type" required>
+                <option value="Midterm">Midterm</option>
+                <option value="Final">Final</option>
+            </select>
+            
+            <label for="course_codes">Course Codes (comma-separated):</label>
+            <input type="text" id="course_codes" name="course_codes" placeholder="e.g., CSE101, CSE102" required>
+            
+            <label for="exam_date">Exam Date:</label>
+            <input type="date" id="exam_date" name="exam_date" required>
+            
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
